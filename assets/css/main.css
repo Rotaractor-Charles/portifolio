@@ -1397,6 +1397,11 @@ ul.icons {
       color: inherit; }
       ul.icons li .icon:before {
         font-size: 1.25em; }
+  ul.actions.arrange{
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
 
 /* Contact */
 ul.contact {
@@ -1480,7 +1485,17 @@ ul.pagination {
       display: none; }
     ul.pagination li:first-child {
       padding-right: 0; } 
+       ul.actions.arrange{
+      flex-direction: column;
     }
+    }
+
+     @media screen and (max-width: 600px) {
+       ul.actions.arrange{
+      flex-direction: column;
+    }
+    }
+   
 
 /* Table */
 .table-wrapper {
